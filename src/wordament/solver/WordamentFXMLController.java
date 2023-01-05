@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.control.TextFormatter.Change;
 import javafx.scene.layout.GridPane;
+import solver.Busqueda;
 
 /**
  * FXML Controller class
@@ -57,27 +58,31 @@ public class WordamentFXMLController implements Initializable {
     private TextField p44;
     
     public void resolver(ActionEvent e) {
-        System.out.println(Arrays.toString(getTableroTxt()));
+        Busqueda busqueda = new Busqueda();
+        
+        boolean resultado = busqueda.validarPalabra(getTableroTxt(),"abajo");
+        
+        System.out.println(resultado);
     }
 
-    public String[][] getTableroTxt() {
-        String[][] values = new String[4][4];
-        values[0][0] = p11.getText();
-        values[0][1] = p12.getText();
-        values[0][2] = p13.getText();
-        values[0][3] = p14.getText();
-        values[1][0] = p21.getText();
-        values[1][1] = p22.getText();
-        values[1][2] = p23.getText();
-        values[1][3] = p24.getText();
-        values[2][0] = p31.getText();
-        values[2][1] = p32.getText();
-        values[2][2] = p33.getText();
-        values[2][3] = p34.getText();
-        values[3][0] = p41.getText();
-        values[3][1] = p42.getText();
-        values[3][2] = p43.getText();
-        values[3][3] = p44.getText();
+    public char[][] getTableroTxt() {
+        char[][] values = new char[4][4];
+        values[0][0] = p11.getText().charAt(0);
+        values[0][1] = p12.getText().charAt(0);
+        values[0][2] = p13.getText().charAt(0);
+        values[0][3] = p14.getText().charAt(0);
+        values[1][0] = p21.getText().charAt(0);
+        values[1][1] = p22.getText().charAt(0);
+        values[1][2] = p23.getText().charAt(0);
+        values[1][3] = p24.getText().charAt(0);
+        values[2][0] = p31.getText().charAt(0);
+        values[2][1] = p32.getText().charAt(0);
+        values[2][2] = p33.getText().charAt(0);
+        values[2][3] = p34.getText().charAt(0);
+        values[3][0] = p41.getText().charAt(0);
+        values[3][1] = p42.getText().charAt(0);
+        values[3][2] = p43.getText().charAt(0);
+        values[3][3] = p44.getText().charAt(0);
         return values;
     }
 
