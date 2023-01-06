@@ -1,8 +1,9 @@
 package wordament.solver;
 
 import java.net.URL;
-import java.util.Arrays;
+import java.util.HashSet;
 import java.util.ResourceBundle;
+import java.util.Set;
 import java.util.function.UnaryOperator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,8 +11,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.control.TextFormatter.Change;
-import javafx.scene.layout.GridPane;
 import solver.Busqueda;
+import solver.LectorArchivos;
 
 /**
  * FXML Controller class
@@ -19,10 +20,6 @@ import solver.Busqueda;
  * @author ronny12301
  */
 public class WordamentFXMLController implements Initializable {
-
-    /**
-     * Initializes the controller class.
-     */
   
     @FXML
     private TextField p11;
@@ -58,34 +55,74 @@ public class WordamentFXMLController implements Initializable {
     private TextField p44;
     
     public void resolver(ActionEvent e) {
+        
+        char[] letras = letrasExistentes();
+        
+        LectorArchivos arc = new LectorArchivos();
         Busqueda busqueda = new Busqueda();
+        try {
+            
+            for (char letra : letras) {
+                String[] diccionario = arc.leerArchivo(letra + "", "esp");
+                
+                for (String palabra : diccionario) {
+                    boolean resultado = busqueda.validarPalabra(getTableroTxt(), palabra);
+                    if (resultado)
+                        System.out.println(palabra + " " + resultado);
+                }
+            }
+     
+        }
+        catch (Exception ex) {
+            System.out.println("Vacio");
+        }
         
-        boolean resultado = busqueda.validarPalabra(getTableroTxt(),"abajo");
         
-        System.out.println(resultado);
     }
 
     public char[][] getTableroTxt() {
         char[][] values = new char[4][4];
-        values[0][0] = p11.getText().charAt(0);
-        values[0][1] = p12.getText().charAt(0);
-        values[0][2] = p13.getText().charAt(0);
-        values[0][3] = p14.getText().charAt(0);
-        values[1][0] = p21.getText().charAt(0);
-        values[1][1] = p22.getText().charAt(0);
-        values[1][2] = p23.getText().charAt(0);
-        values[1][3] = p24.getText().charAt(0);
-        values[2][0] = p31.getText().charAt(0);
-        values[2][1] = p32.getText().charAt(0);
-        values[2][2] = p33.getText().charAt(0);
-        values[2][3] = p34.getText().charAt(0);
-        values[3][0] = p41.getText().charAt(0);
-        values[3][1] = p42.getText().charAt(0);
-        values[3][2] = p43.getText().charAt(0);
-        values[3][3] = p44.getText().charAt(0);
+        values[0][0] = p11.getText().toLowerCase().charAt(0);
+        values[0][1] = p12.getText().toLowerCase().charAt(0);
+        values[0][2] = p13.getText().toLowerCase().charAt(0);
+        values[0][3] = p14.getText().toLowerCase().charAt(0);
+        values[1][0] = p21.getText().toLowerCase().charAt(0);
+        values[1][1] = p22.getText().toLowerCase().charAt(0);
+        values[1][2] = p23.getText().toLowerCase().charAt(0);
+        values[1][3] = p24.getText().toLowerCase().charAt(0);
+        values[2][0] = p31.getText().toLowerCase().charAt(0);
+        values[2][1] = p32.getText().toLowerCase().charAt(0);
+        values[2][2] = p33.getText().toLowerCase().charAt(0);
+        values[2][3] = p34.getText().toLowerCase().charAt(0);
+        values[3][0] = p41.getText().toLowerCase().charAt(0);
+        values[3][1] = p42.getText().toLowerCase().charAt(0);
+        values[3][2] = p43.getText().toLowerCase().charAt(0);
+        values[3][3] = p44.getText().toLowerCase().charAt(0);
         return values;
     }
+    
+    
+    public char[] letrasExistentes() {
+        char[][] t = getTableroTxt();
+        Set<Character> letrasUnicas = new HashSet<>();
 
+        for (char[] arr : t) {
+            for (char letra : arr) {
+                letrasUnicas.add(letra);
+            }
+        }
+
+        char[] arregloFinal = new char[letrasUnicas.size()];
+        int i = 0;
+        for (char c : letrasUnicas) {
+            arregloFinal[i] = c;
+            i++;
+        }
+        return arregloFinal;
+    }
+
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         

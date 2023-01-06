@@ -1,0 +1,38 @@
+#btn-back {
+    -fx-background-color:  #6690D4;
+}
+
+#btn-back:hover {
+    -fx-background-color: #ABBDDB;
+}
+
+#btn-back:pressed {
+    -fx-background-color:#2F4261
+}
+
+
+#btn-solve {
+    -fx-background-color: #E3A524;
+}
+
+#btn-solve:hover {
+    -fx-background-color: #F7C14F;
+}
+
+#btn-solve:pressed {
+    -fx-background-color:#c09401
+}
+
+
+.txt-celdas {
+    -fx-text-fill: white;
+    -fx-background-color:  #476494;
+}
+
+.txt-celdas:hover {
+    -fx-background-color: #818FA6;
+}
+
+.txt-celdas:focused {
+    -fx-background-color: #2F4261;
+}

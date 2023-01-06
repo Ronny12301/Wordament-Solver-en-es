@@ -28,82 +28,82 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <TextField fx:id="p11" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p11" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p12" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p12" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p13" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p13" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p14" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p14" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p21" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p21" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p22" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p22" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p23" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p23" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p24" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p24" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p31" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p31" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p32" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p32" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p33" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p33" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p34" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p34" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p41" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p41" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p42" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p42" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p43" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p43" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
             </TextField>
-            <TextField fx:id="p44" alignment="CENTER" prefHeight="170.0" promptText="A" style="-fx-background-color: #476494; -fx-text-fill: white;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <TextField fx:id="p44" alignment="CENTER" prefHeight="170.0" promptText="A" styleClass="txt-celdas" stylesheets="@WordamentSytles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                <font>
                   <Font size="34.0" />
                </font>
@@ -115,7 +115,7 @@
       </GridPane>
    </center>
    <right>
-      <Button alignment="CENTER" mnemonicParsing="false" onAction="#resolver" prefHeight="31.0" prefWidth="102.0" text="Solve" BorderPane.alignment="BOTTOM_CENTER">
+      <Button id="btn-solve" alignment="CENTER" mnemonicParsing="false" onAction="#resolver" prefHeight="31.0" prefWidth="102.0" stylesheets="@WordamentSytles.css" text="Solve" textFill="WHITE" BorderPane.alignment="BOTTOM_CENTER">
          <BorderPane.margin>
             <Insets bottom="20.0" right="35.0" />
          </BorderPane.margin>
@@ -127,7 +127,7 @@
    <top>
       <HBox prefHeight="36.0" prefWidth="750.0" BorderPane.alignment="CENTER">
          <children>
-            <Button graphicTextGap="0.0" minWidth="80.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #6690D4;" text="Back" textFill="WHITE">
+            <Button id="btn-back" graphicTextGap="0.0" minWidth="80.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" stylesheets="@WordamentSytles.css" text="Back" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>

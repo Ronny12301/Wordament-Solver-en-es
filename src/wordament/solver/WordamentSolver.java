@@ -22,8 +22,10 @@ public class WordamentSolver extends Application{
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("WordamentFXML.fxml"));
-        stage.setTitle("PruebaFX");
-        stage.setScene(new Scene(root));
+        stage.setTitle("Wordament Solver");
+        Scene scene = new Scene(root);
+        
+        stage.setScene(scene);
         stage.show();
     }
     
