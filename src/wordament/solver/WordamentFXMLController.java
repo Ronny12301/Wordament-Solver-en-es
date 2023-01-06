@@ -158,7 +158,7 @@ public class WordamentFXMLController implements Initializable {
             btnRegresar.setText("Regresar");
         }
         else {
-            btnResolver.setText("Resolve");
+            btnResolver.setText("Solve");
             btnRegresar.setText("Back");
         }
         
