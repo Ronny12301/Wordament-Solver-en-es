@@ -1,5 +1,6 @@
 package wordament.solver;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.ResourceBundle;
@@ -7,10 +8,16 @@ import java.util.Set;
 import java.util.function.UnaryOperator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.control.TextFormatter.Change;
+import javafx.stage.Stage;
 import solver.Busqueda;
 import solver.LectorArchivos;
 
@@ -54,6 +61,26 @@ public class WordamentFXMLController implements Initializable {
     @FXML
     private TextField p44;
     
+    @FXML
+    private Button btnResolver;
+    @FXML
+    private Button btnRegresar;
+    
+    private static String idioma;
+    
+    public static void setIdioma(String idioma) {
+        WordamentFXMLController.idioma = idioma;
+    }
+    
+    public void regresar(ActionEvent e) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("MenuFXML.fxml"));
+        Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    
     public void resolver(ActionEvent e) {
         LectorArchivos arc = new LectorArchivos();
         Busqueda busqueda = new Busqueda();
@@ -61,7 +88,7 @@ public class WordamentFXMLController implements Initializable {
             char[] letras = letrasExistentes();
             
             for (char letra : letras) {
-                String[] diccionario = arc.leerArchivo(letra + "", "esp");
+                String[] diccionario = arc.leerArchivo(letra + "", idioma);
                 
                 for (String palabra : diccionario) {
                     boolean resultado = busqueda.validarPalabra(getTableroTxt(), palabra);
@@ -124,8 +151,18 @@ public class WordamentFXMLController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-        TextField[] textFields = {p11, p12, p13, p14, p21, p22, p23, p24, p31, p32, p33, p34, p41, p42, p43, p44};
-
+        TextField[] textFields = {p11, p12, p13, p14, p21, p22, p23, p24, p31, p32, p33, p34, p41, p42, p43, p44};        
+        
+        if (idioma.equals("esp")) {
+            btnResolver.setText("Resolver");
+            btnRegresar.setText("Regresar");
+        }
+        else {
+            btnResolver.setText("Resolve");
+            btnRegresar.setText("Back");
+        }
+        
+        
         UnaryOperator<Change> filter = change -> {
             String newText = change.getControlNewText();
             if (newText.length() > 1) {

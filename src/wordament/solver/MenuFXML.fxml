@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="245.0" minWidth="290.0" prefHeight="510.0" prefWidth="750.0" styleClass="fondo" stylesheets="@WordamentSytles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordament.solver.MenuFXMLController">
+   <center>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#setEng" prefHeight="41.0" prefWidth="112.0" styleClass="botones" stylesheets="@WordamentSytles.css" text="English" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#setEsp" prefHeight="41.0" prefWidth="112.0" styleClass="botones" stylesheets="@WordamentSytles.css" text="Español" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" minWidth="448.0" prefHeight="75.0" text="Wordament Solver" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" top="10.0" />
+         </padding>
+      </Label>
+   </top>
+</BorderPane>

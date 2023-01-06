@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="510.0" prefWidth="750.0" style="-fx-background-color: #25344D;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordament.solver.WordamentFXMLController">
+<BorderPane minWidth="500.0" prefHeight="510.0" prefWidth="750.0" styleClass="fondo" stylesheets="@WordamentSytles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordament.solver.WordamentFXMLController">
    <center>
       <GridPane alignment="CENTER" hgap="5.0" prefHeight="360.0" prefWidth="360.0" vgap="5.0" BorderPane.alignment="CENTER">
          <columnConstraints>
@@ -115,7 +115,7 @@
       </GridPane>
    </center>
    <right>
-      <Button id="btn-solve" alignment="CENTER" mnemonicParsing="false" onAction="#resolver" prefHeight="31.0" prefWidth="102.0" stylesheets="@WordamentSytles.css" text="Solve" textFill="WHITE" BorderPane.alignment="BOTTOM_CENTER">
+      <Button fx:id="btnResolver" alignment="CENTER" mnemonicParsing="false" onAction="#resolver" prefHeight="31.0" prefWidth="102.0" styleClass="botones" stylesheets="@WordamentSytles.css" text="Solve" textFill="WHITE" BorderPane.alignment="BOTTOM_CENTER">
          <BorderPane.margin>
             <Insets bottom="20.0" right="35.0" />
          </BorderPane.margin>
@@ -127,7 +127,7 @@
    <top>
       <HBox prefHeight="36.0" prefWidth="750.0" BorderPane.alignment="CENTER">
          <children>
-            <Button id="btn-back" graphicTextGap="0.0" minWidth="80.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" stylesheets="@WordamentSytles.css" text="Back" textFill="WHITE">
+            <Button id="btn-back" fx:id="btnRegresar" graphicTextGap="0.0" minWidth="80.0" mnemonicParsing="false" onAction="#regresar" prefHeight="31.0" prefWidth="120.0" stylesheets="@WordamentSytles.css" text="Back" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>

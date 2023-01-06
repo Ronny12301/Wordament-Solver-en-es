@@ -1,3 +1,7 @@
+.fondo {
+    -fx-background-color:  #25344D;
+}
+
 #btn-back {
     -fx-background-color:  #6690D4;
 }
@@ -11,15 +15,15 @@
 }
 
 
-#btn-solve {
+.botones {
     -fx-background-color: #E3A524;
 }
 
-#btn-solve:hover {
+.botones:hover {
     -fx-background-color: #F7C14F;
 }
 
-#btn-solve:pressed {
+.botones:pressed {
     -fx-background-color:#c09401
 }
 
