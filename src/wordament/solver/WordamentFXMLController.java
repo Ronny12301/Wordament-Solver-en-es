@@ -55,12 +55,10 @@ public class WordamentFXMLController implements Initializable {
     private TextField p44;
     
     public void resolver(ActionEvent e) {
-        
-        char[] letras = letrasExistentes();
-        
         LectorArchivos arc = new LectorArchivos();
         Busqueda busqueda = new Busqueda();
         try {
+            char[] letras = letrasExistentes();
             
             for (char letra : letras) {
                 String[] diccionario = arc.leerArchivo(letra + "", "esp");
@@ -68,7 +66,7 @@ public class WordamentFXMLController implements Initializable {
                 for (String palabra : diccionario) {
                     boolean resultado = busqueda.validarPalabra(getTableroTxt(), palabra);
                     if (resultado)
-                        System.out.println(palabra + " " + resultado);
+                        System.out.println(palabra);
                 }
             }
      
