@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="451.0" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@WordamentSytles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordament.solver.ResultadosFXMLController">
+   <center>
+      <TextArea fx:id="texto" editable="false" minWidth="50.0" prefHeight="200.0" prefWidth="200.0" promptText="Results" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="35.0" left="35.0" right="35.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+   </center>
+   <top>
+      <HBox prefHeight="55.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="btn-back" fx:id="btnRegresar" graphicTextGap="0.0" minWidth="80.0" mnemonicParsing="false" onAction="#regresar" prefHeight="31.0" prefWidth="120.0" stylesheets="@WordamentSytles.css" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region minWidth="0.0" prefHeight="101.0" prefWidth="37.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="lblResultados" alignment="CENTER" contentDisplay="CENTER" text="Resultados" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Region minWidth="0.0" prefHeight="101.0" prefWidth="139.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

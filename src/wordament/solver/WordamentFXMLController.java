@@ -65,11 +65,16 @@ public class WordamentFXMLController implements Initializable {
     private Button btnResolver;
     @FXML
     private Button btnRegresar;
+
+    protected static String listaResultados;
     
     private static String idioma;
     
     public static void setIdioma(String idioma) {
         WordamentFXMLController.idioma = idioma;
+    }
+    public static String getIdioma() {
+        return WordamentFXMLController.idioma;
     }
     
     public void regresar(ActionEvent e) throws IOException {
@@ -81,7 +86,7 @@ public class WordamentFXMLController implements Initializable {
     }
     
     
-    public void resolver(ActionEvent e) {
+    public void resolver(ActionEvent e) throws IOException {
         LectorArchivos arc = new LectorArchivos();
         Busqueda busqueda = new Busqueda();
         try {
@@ -93,16 +98,27 @@ public class WordamentFXMLController implements Initializable {
                 for (String palabra : diccionario) {
                     boolean resultado = busqueda.validarPalabra(getTableroTxt(), palabra);
                     if (resultado)
-                        System.out.println(palabra);
+                        listaResultados += palabra + "\n";
                 }
             }
-     
+            
+            Parent root = FXMLLoader.load(getClass().getResource("ResultadosFXML.fxml"));
+            Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
         }
         catch (Exception ex) {
-            System.out.println("Vacio");
-        }
-        
-        
+            System.err.println("Vacio");
+        }  
+    }
+    
+    public void regresarTablero(ActionEvent e) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("WordamentFXML.fxml"));
+        Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public char[][] getTableroTxt() {
@@ -125,7 +141,6 @@ public class WordamentFXMLController implements Initializable {
         values[3][3] = p44.getText().toLowerCase().charAt(0);
         return values;
     }
-    
     
     public char[] letrasExistentes() {
         char[][] t = getTableroTxt();

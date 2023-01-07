@@ -26,7 +26,6 @@ public class LectorArchivos {
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader reader = new BufferedReader(fileReader);
-            //BufferedReader reader = new BufferedReader(new FileReader(url.getFile()));
             String palabra;
             while((palabra=reader.readLine()) != null) {
                 palabras.add(palabra);
