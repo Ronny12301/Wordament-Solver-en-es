@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="451.0" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@WordamentSytles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordament.solver.ResultadosFXMLController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="451.0" prefHeight="510.0" prefWidth="750.0" styleClass="fondo" stylesheets="@WordamentSytles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordament.solver.ResultadosFXMLController">
    <center>
       <TextArea fx:id="texto" editable="false" minWidth="50.0" prefHeight="200.0" prefWidth="200.0" promptText="Results" BorderPane.alignment="CENTER">
          <BorderPane.margin>

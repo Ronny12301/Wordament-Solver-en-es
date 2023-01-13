@@ -24,8 +24,7 @@ public class LectorArchivos {
         File file = new File(url.getFile());
   
         try {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader reader = new BufferedReader(fileReader);
+            BufferedReader reader = new BufferedReader(new FileReader(file));
             String palabra;
             while((palabra=reader.readLine()) != null) {
                 palabras.add(palabra);
@@ -37,7 +36,7 @@ public class LectorArchivos {
             Logger.getLogger(LectorArchivos.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        String[] palabrasArreglo = palabras.toArray(new String[0]);
+        String[] palabrasArreglo = palabras.toArray(String[]::new);
         return palabrasArreglo;
 
     }
